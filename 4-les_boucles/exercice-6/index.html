@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const code = '0000';
+        let motDePasse= prompt('Veuillez entrer le mot de passe');
+
+        while(motDePasse !== code) {
+            motDePasse = prompt('Mot de passe incorrect, essayez à nouveau.'); 
+        }
+       alert('Accès autorisé');
+    </script>
+</body>
+</html>

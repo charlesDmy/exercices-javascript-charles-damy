@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nombreSecret = 24;
+        let nombre = parseInt(prompt('Devine le nombre secret !'));
+        let essais = 0;
+        let nombreEssais = 3;
+
+        while(nombre !== nombreSecret) {     
+            console.log(nombreEssais);
+            nombreEssais--;
+            essais++;
+
+            if(nombreEssais === 0) {
+                alert(`Vous n'avez plus d'essais`);
+                break;
+            }
+
+            if(nombre < nombreSecret) {
+                nombre = parseInt(prompt(`trop petit ! Il vous reste ${nombreEssais} essais`));
+            }
+
+            if(nombre > nombreSecret) {  
+                nombre = parseInt(prompt(`trop grand ! Il vous reste ${nombreEssais} essais`));
+            }
+
+            if(nombre === nombreSecret) {
+                alert(`félicitations, vous avez trouvé en ${essais} essais !`);
+                break;
+            }
+        }
+    
+    </script>
+</body>
+</html>
