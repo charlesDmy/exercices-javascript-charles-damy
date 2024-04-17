@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tablJours = [
+            'lundi',
+            'mardi',
+            'mercredi',
+            'jeudi',
+            'vendredi',
+            'samedi',
+            'dimanche'
+        ]
+        console.table(tablJours)
+
+        for(let i=1; i <=7; i++){
+            console.log(`Le jour  ${i}  de la semaine est ${tablJours[i-1]}`)
+            if(i===7){
+                console.log(`Le jour 7 de la semaine est Dimanche, et le Dimanche c'est Gratuit `)
+            }
+        }
+    </script>
+</body>
+</html>
