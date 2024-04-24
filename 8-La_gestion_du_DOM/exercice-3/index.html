@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- ## **Exercice 3 : Changer la Couleur de Fond au clic**
+
+> Créez un bouton qui, lorsqu'il est cliqué, change la couleur de fond de la page (du `<body>`). Centrez le bouton au milieu de la page (horizontalement et verticalement).
+> 
+
+### **⭐ Bonus : Aléatoire**
+
+> Au clic sur le bouton, la couleur de fond de la page change de manière aléatoire. 
+Utilisez un tableau contenant une liste de couleurs pour vous aider, ou bien une autre méthode de votre choix.
+> -->
+    <button class="boutton">clickez</button>
+<script>
+    let boutton=document.querySelector('.boutton')
+    // ici au clic sur l'élément, le message 'Élément cliqué' s'affiche dans la console
+    boutton.addEventListener('click', function() {
+        let elementBody=document.querySelector('body')
+        elementBody.style.background = 'red';
+    });
+//----------------------------------------------------------------------------------------------
+
+</script>
+</body>
+</html>
