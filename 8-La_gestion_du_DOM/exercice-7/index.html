@@ -18,12 +18,11 @@
         let items = document.querySelectorAll('.item')
         console.log(items)
         for(const item of items){
-            item.style.color = "blue";
+            item.style.color = "darkblue";
 
             item.addEventListener('click', function(){
-                // ajouter ou enlever une class css
                 
-                // item.style.textDecoration='line-through'
+                item.style.textDecoration='line-through'
           })
         }
         

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nom</label>
+        <input class="text" type="text" id="nom" name="nom">
+        <br>
+        <br>
+        <input class="bouton" type="submit" value="Soumettre">
+    </form>
+
+    <script>
+        let formulaire = document.querySelector('form');
+        let text = document.querySelector('.text')
+        
+        formulaire.addEventListener('submit', function() {
+            event.preventDefault();
+            console.log('ok')
+        });
+
+    </script>
+</body>
+</html>

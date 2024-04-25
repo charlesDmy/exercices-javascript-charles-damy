@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>compteur</button>
+    <script>
+        let compteur =0;
+
+        let boutonCompteur = document.querySelector('button');
+        let nvxParagraphe = document.createElement('p');
+        document.body.appendChild(nvxParagraphe);
+
+        
+
+        boutonCompteur.addEventListener('click', function() {
+            compteur++;
+            console.log('compteur')
+            let elementparagraphe = document.querySelector('p');
+            elementparagraphe.textContent='compteur : ' + compteur;
+        });
+
+       
+
+    </script>
+</body>
+</html>
